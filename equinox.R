@@ -1,3 +1,7 @@
+## note the hard coded location of the shared object /dll file.
+## please change this
+
+
 dyn.load(paste("~/RLibs/equinox", .Platform$dynlib.ext, sep=""));
 
 isLeapYear <- function(year) {
