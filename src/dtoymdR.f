@@ -1,4 +1,4 @@
-      SUBROUTINE DtoYMD (DAY, IYEAR,IMONTH,DATE)
+      SUBROUTINE dtoymdr (DAY, IYEAR,IMONTH,DATE)
 C****
 C**** For a given DAY measured from 2000 January 1, hour 0, determine
 C**** the IYEAR (A.D.), IMONTH and DATE (between 0. and 31.).
@@ -61,4 +61,4 @@ C     M=12
       IMONTH = M
       DATE   = DAY1Y - JDSUMN(M)
       RETURN
-      END
+      END SUBROUTINE dtoymdr

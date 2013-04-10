@@ -1,4 +1,4 @@
-      Subroutine ORBPAR (YEAR, ECCEN,OBLIQ,OMEGVP)
+      Subroutine orbparr (YEAR, ECCEN,OBLIQ,OMEGVP)
 C****
 C**** ORBPAR calculates the three orbital parameters as a function of
 C**** YEAR.  The source of these calculations is: Andre L. Berger,
@@ -216,4 +216,4 @@ C****
       OMEGVP = Modulo (PIE+PSI+.5*TWOPI, TWOPI)
 C****
       Return
-      End
+      End subroutine orbparR
