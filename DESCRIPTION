@@ -5,6 +5,6 @@ Title: equinox
 Author: Karim Rahim <karim.rahim@gmail.com>
 Maintainer: Karim Rahim <karim.rahim@gmail.com>
 Depends: R (>= 2.15.2)
-Description: This file calculates the equinox dates, it is a wrapper for Fortran functions. The source of these calculations is: Andre L. Berger, 1978, "Long-Term Variations of Daily Insolation and Quaternary Climatic Changes", JAS, v.35, p.2362.  Also useful is: Andre L. Berger, May 1978, "A Simple Algorithm to Compute Long Term Variations of Daily Insolation", published by Institut D'Astronomie de Geophysique, Universite Catholique de Louvain, Louvain-la Neuve, No. 18. At this time the package has not been placed on CRAN, and I have yet to write manual files. Please see the Fortran source for documentation.
+Description: This file calculates the equinox dates, it is a wrapper for Fortran functions. The source of these calculations is: Andre L. Berger, 1978, "Long-Term Variations of Daily Insolation and Quaternary Climatic Changes", JAS, v.35, p.2362.  Also useful is: Andre L. Berger, May 1978, "A Simple Algorithm to Compute Long Term Variations of Daily Insolation", published by Institut D'Astronomie de Geophysique, Universite Catholique de Louvain, Louvain-la Neuve, No. 18. At this time the package has not been placed on CRAN, and I have yet to write manual files. Please see the Fortran source for documentation. You will need the Rtools package on CRAN to install this on a Windows machine.
 License: GPL (>= 2)
 URL: http://github.com/krahim/equinox
