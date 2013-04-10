@@ -2,7 +2,7 @@
 ## please change this
 
 
-dyn.load(paste("~/RLibs/equinox", .Platform$dynlib.ext, sep=""));
+##dyn.load(paste("~/RLibs/equinox", .Platform$dynlib.ext, sep=""));
 
 isLeapYear <- function(year) {
     res <- if( ((year %% 4 ==  0) && (year %% 100 != 0 )) ||
