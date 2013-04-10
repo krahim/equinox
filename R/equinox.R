@@ -12,9 +12,25 @@ isLeapYear <- function(year) {
 
 ## integers in R are 32 bits.
 vernal <- function(iyear) {
-
+    ## C****
+    ## C**** For a given year, VERNAL calculates an approximate time of vernal
+    ## C**** equinox in days measured from 2000 January 1, hour 0.
+    ## C****
+    ## C**** VERNAL assumes that vernal equinoxes from one year to the next
+    ## C**** are separated by exactly 365.2425 days, a tropical year
+    ## C**** [Explanatory Supplement to The Astronomical Ephemeris].  If the
+    ## C**** tropical year is 365.2422 days, as indicated by other references,
+    ## C**** then the time of the vernal equinox will be off by 2.88 hours in
+    ## C**** 400 years.
+    ## C****
+    ## C**** Time of vernal equinox for year 2000 A.D. is March 20, 7:36 GMT
+    ## C**** [NASA Reference Publication 1349, Oct. 1994].  VERNAL assumes
+    ## C**** that vernal equinox for year 2000 will be on March 20, 7:30, or
+    ## C**** 79.3125 days from 2000 January 1, hour 0.  Vernal equinoxes for
+    ## C**** other years returned by VERNAL are also measured in days from
+    ## C**** 2000 January 1, hour 0.  79.3125 = 31 + 29 + 19 + 7.5/24.
     res <- .Fortran("vernalr", as.integer(iyear), res1=double(1))
-
+    
     return(res$res1)
 
 }
@@ -42,6 +58,13 @@ orbpar <- function(year) {
 }
 
 equinox <- function(iyear) {
+    ## calculates vernal and automal equniox
+    ## measured in days from 2000, Jan 1 hour 0.
+    ## see vernal for more details.
+    ## Time of vernal equinox for year 2000 A.D. is March 20, 7:36 GMT
+    ## [NASA Reference Publication 1349, Oct. 1994].
+    ## vernal(2000) gives  79.3125
+    
     EDAYzY <- 365.2425
     
     verEQX <- vernal(iyear)
