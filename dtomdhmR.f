@@ -8,7 +8,7 @@ C****
 
       REAL*8 DAY,DATE
       CALL dtoymdr (DAY, IYEAR,IMONTH,DATE)
-      IDATE  = DATE+1.
+      IDATE  = DATE+1
       IMINUT = NINT ((DATE-IDATE+1)*24.*60.)
       IHOUR  = IMINUT / 60
       IMINUT = IMINUT - IHOUR*60

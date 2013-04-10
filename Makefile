@@ -6,7 +6,10 @@ FOBJS = $(FSOURCES:.f=.o)
 
 FLAGS = -O2 -funroll-loops -fPIC 
 ##FFLAGS = -WSurprising
-WARNINGS = -Wall
+
+## the code will give type conversion warnings.
+##WARNINGS = -Wall
+
 ### if you build this in windows with rtools, you should set equinox.dll
 ## and perhaps change the location ~/RLibs/
 ## to a location on the C drive.

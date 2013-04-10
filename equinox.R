@@ -10,6 +10,7 @@ isLeapYear <- function(year) {
     return(res)
 }
 
+## integers in R are 32 bits.
 vernal <- function(iyear) {
 
     res <- .Fortran("vernalr", as.integer(iyear), res1=double(1))
