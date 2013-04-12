@@ -12,6 +12,6 @@ Build instructions for general Linux machine.
  b) R CMD check equinox_0.1-1.tar.gz (optional)
  c) R CMD INSTALL equinox_0.1-1.tar.gz
 
-Note: The version number may change, and you will likely have to set the PATH variable for other operating systems. This will also will require gfortran. Please see the documention for your Linux distribution, Fink for Mac, or Rtools on CRAN for Windows.
+Note: The version number may change, and you will likely have to set the PATH variable for other operating systems. This will also require gfortran. Please see the documention for your Linux distribution, Fink for Mac, or Rtools on CRAN for Windows.
 
 
